@@ -2,7 +2,7 @@
 
 PartnerIQ is an AI-powered company intelligence and partnership readiness platform. It uses Google's Gemini LLM (with live Google Search capabilities) to deeply analyze a target company, scrape its website, and generate a comprehensive assessment of its business profile, key strengths, and partnership opportunities.
 
-## 🚀 Capabilities
+## Capabilities
 
 * **Automated Company Profiling**: Input any company name (and optional website URL), and PartnerIQ will scrape the site and synthesize data into a structured profile.
 * **Partnership Readiness Scoring**: Uses AI to evaluate and score how ready or viable a company is for a strategic partnership, providing specific strengths, risks, and recommendations.
@@ -12,7 +12,7 @@ PartnerIQ is an AI-powered company intelligence and partnership readiness platfo
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * **Frontend**: React 19, Vite, TailwindCSS, Axios, React Router.
 * **Backend**: FastAPI, SQLModel (SQLite), Uvicorn.
@@ -21,7 +21,7 @@ PartnerIQ is an AI-powered company intelligence and partnership readiness platfo
 
 ---
 
-## 💻 How to Run Locally (Cloning the Repo)
+## How to Run Locally (Cloning the Repo)
 
 ### 1. Clone the Repository
 ```bash
@@ -76,7 +76,7 @@ npm run dev
 
 ---
 
-## ☁️ How to Run via GitHub Codespaces (Browser)
+## How to Run via GitHub Codespaces (Browser)
 
 If you don't want to run the project locally on your machine, you can spin it up entirely in the cloud using GitHub Codespaces.
 
@@ -95,5 +95,5 @@ If you don't want to run the project locally on your machine, you can spin it up
 
 ---
 
-## 🔒 Security Note
+## Security Note
 * Do not commit your `.env` file or hardcode your `GEMINI_API_KEY` into the source code. GitHub Push Protection is enabled.
