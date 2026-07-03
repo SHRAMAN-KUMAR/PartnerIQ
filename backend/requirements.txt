@@ -1,0 +1,45 @@
+# PartnerIQ Backend Dependencies
+# 
+# Python version: 3.10+ recommended
+# 
+# Virtual environment usage:
+# It is highly recommended to use a virtual environment to manage project dependencies.
+# To create and activate a virtual environment:
+#   python -m venv venv
+#   source venv/bin/activate  # On Linux/macOS
+#   venv\Scripts\activate     # On Windows
+# 
+# Installation command:
+#   pip install -r requirements.txt
+
+# --- Web Framework & Server ---
+# High-performance API framework
+fastapi>=0.111.0
+# ASGI web server for running FastAPI
+uvicorn[standard]>=0.30.1
+
+# --- Database & Validation ---
+# ORM for database interactions, combining SQLAlchemy and Pydantic
+sqlmodel>=0.0.18
+# Data validation and serialization (using v2)
+pydantic>=2.7.4
+
+# --- AI Integration ---
+# Official Python SDK for interacting with Google GenAI API
+google-genai>=1.0.0
+
+# --- Web Scraping & HTTP ---
+# Asynchronous HTTP client for making external API and web requests
+httpx>=0.27.0
+# HTML parsing library for extracting data from scraped websites
+beautifulsoup4>=4.12.3
+
+# --- Configuration ---
+# Loads environment variables from a .env file into the environment
+python-dotenv>=1.0.1
+
+# --- Utilities & Document Generation ---
+# Python implementation of Markdown for processing markdown text
+markdown>=3.6
+# Library for creating complex PDF documents (used for reports)
+reportlab>=4.2.0

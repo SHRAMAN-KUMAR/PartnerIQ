@@ -1,0 +1,75 @@
+{
+  "type": "object",
+  "properties": {
+    "report_metadata": {
+      "type": "object",
+      "properties": {
+        "company_name": { "type": "string" },
+        "website_url": { "type": "string" }
+      },
+      "required": ["company_name", "website_url"]
+    },
+    "company_identity": {
+      "type": "object",
+      "properties": {
+        "industry": { "type": "string" },
+        "sub_industry": { "type": "string" }
+      },
+      "required": ["industry", "sub_industry"]
+    },
+    "business_profile": {
+      "type": "object",
+      "properties": {
+        "business_summary": { "type": "string" },
+        "products": { "type": "array", "items": { "type": "string" } },
+        "services": { "type": "array", "items": { "type": "string" } },
+        "target_market": { "type": "string" },
+        "key_strengths": { "type": "array", "items": { "type": "string" } },
+        "growth_signals": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["business_summary", "products", "services", "target_market", "key_strengths", "growth_signals"]
+    },
+    "partnership_opportunities": {
+      "type": "object",
+      "properties": {
+        "potential_opportunities": { "type": "array", "items": { "type": "string" } },
+        "suggested_decision_maker_types": { "type": "array", "items": { "type": "string" } },
+        "recommended_outreach_strategy": { "type": "string" }
+      },
+      "required": ["potential_opportunities", "suggested_decision_maker_types", "recommended_outreach_strategy"]
+    },
+    "partnership_readiness_assessment": {
+      "type": "object",
+      "properties": {
+        "overall_score": { "type": "integer", "description": "Score from 0 to 100" },
+        "priority": { "type": "string", "enum": ["High", "Medium", "Low"] },
+        "reasoning": { "type": "string" },
+        "strengths": { "type": "array", "items": { "type": "string" } },
+        "risks": { "type": "array", "items": { "type": "string" } },
+        "opportunities": { "type": "array", "items": { "type": "string" } },
+        "recommendation": { "type": "string" }
+      },
+      "required": ["overall_score", "priority", "reasoning", "strengths", "risks", "opportunities", "recommendation"]
+    },
+    "confidence_assessment": {
+      "type": "object",
+      "properties": {
+        "confidence_level": { "type": "string", "enum": ["High", "Medium", "Low"] },
+        "reason": { "type": "string" },
+        "missing_information": { "type": "array", "items": { "type": "string" } },
+        "verified_sources": { "type": "array", "items": { "type": "string" } },
+        "inference_notes": { "type": "string" },
+        "source_summary": { "type": "string" }
+      },
+      "required": ["confidence_level", "reason", "missing_information", "verified_sources", "inference_notes", "source_summary"]
+    }
+  },
+  "required": [
+    "report_metadata",
+    "company_identity",
+    "business_profile",
+    "partnership_opportunities",
+    "partnership_readiness_assessment",
+    "confidence_assessment"
+  ]
+}
